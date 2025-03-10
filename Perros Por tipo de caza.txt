@@ -1,0 +1,27 @@
+Caza menor
+
+Cocker Spaniel
+Beagle
+
+Caza mayor
+
+Podenco andaluz
+Alano español
+
+Caza de agua
+
+Perro de Agua Español
+El Braque Francés
+
+Caza de muestra
+
+Pointer
+Setter Inglés
+
+
+Caza de madriguera
+
+teckel
+jagd terrier
+
+
