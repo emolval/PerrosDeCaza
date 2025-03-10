@@ -4,59 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="icon" href="../img/dog-8691338_1280.webp">
     <link rel="stylesheet" href="../css/Contactanos.css">
 </head>
 <body>
 
-    <form id="contactForm" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="POST" enctype="multipart/form-data">
-        <h1 style="text-align: center;">Contáctanos</h1>
+    <header>
+        <h1>Caza de muestra</h1>
+        <a href="./inicio.html">Inicio</a>
+    </header>
+    <main>
+        <form id="contactForm" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="POST" enctype="multipart/form-data">
+            <h1 style="text-align: center;">Contáctanos</h1>
 
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="123456789">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="123456789">
 
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
 
-        <label for="motivo">Motivo del contacto:</label>
-        <select id="motivo" name="motivo">
-            <option value="informacion">Solicitud de información</option>
-            <option value="reclamo">Reclamo</option>
-            <option value="sugerencia">Sugerencia</option>
-            <option value="otro">Otro</option>
-        </select>
+            <label for="motivo">Motivo del contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="informacion">Solicitud de información</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">Otro</option>
+            </select>
 
-        <label>¿Cómo prefieres que te contactemos?</label>
-        <div id="opcionContacto">
-                <label for="contacto_email" style="display: inline;">Email</label>
-                <input type="radio" id="contacto_email" name="contacto" value="email" checked>
-                <label for="contacto_telefono" style="display: inline;">Teléfono</label>
-                <input type="radio" id="contacto_telefono" name="contacto" value="telefono">
+            <label>¿Cómo prefieres que te contactemos?</label>
+            <div id="opcionContacto">
+                    <label for="contacto_email" style="display: inline;">Email</label>
+                    <input type="radio" id="contacto_email" name="contacto" value="email" checked>
+                    <label for="contacto_telefono" style="display: inline;">Teléfono</label>
+                    <input type="radio" id="contacto_telefono" name="contacto" value="telefono">
+            </div>
+
+            <label for="mensaje">Escribe tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu consulta aquí..."></textarea>
+
+            <label for="archivo">Adjuntar archivo (opcional):</label>
+            <input type="file" id="archivo" name="archivo" accept=".jpg, .png, .pdf">
+
+            <div id="terminosCaja">
+                <label for="terminos" style="display: inline;">Acepto los términos y condiciones</label>
+                <input type="checkbox" id="terminos" name="terminos">
+            </div>
+
+            <div id="boton">
+                <button type="submit">Enviar</button>
+            </div>
+
+            <div id="errorMessages"></div>
+            
+        </form>
+        <script src="../js/Contactanos.js"></script>
+    </main>
+    <footer>
+        <p>&copy; Perros de caza</p>
+        <div class="imagenes">
+            <a href="https://www.instagram.com/"><img src="../img/redesSociales/instragram.svg" alt="logo de instagram" ></a>
+            <a href="https://www.twitch.tv/"><img src="../img/redesSociales/twitch.svg" alt="logo de twitch"></a>
+            <a href="https://x.com/?lang=es"><img src="../img/redesSociales/twiter.svg" alt="logo de twitter" id="svg-icon"></a>   
         </div>
-
-        <label for="mensaje">Escribe tu mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu consulta aquí..."></textarea>
-
-        <label for="archivo">Adjuntar archivo (opcional):</label>
-        <input type="file" id="archivo" name="archivo" accept=".jpg, .png, .pdf">
-
-        <div id="terminosCaja">
-            <label for="terminos" style="display: inline;">Acepto los términos y condiciones</label>
-            <input type="checkbox" id="terminos" name="terminos">
-        </div>
-
-        <div id="boton">
-            <button type="submit">Enviar</button>
-        </div>
-
-        <div id="errorMessages"></div>
-        
-    </form>
-    <script src="../js/Contactanos.js"></script>
+    </footer>
 </body>
 </html>
