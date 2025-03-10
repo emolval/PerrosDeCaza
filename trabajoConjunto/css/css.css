@@ -74,3 +74,11 @@ body {
     padding: 0;
     justify-content: center;
 }
+
+#perrosAside{
+    margin-left: 15px;
+}
+
+aside {
+    margin-top: 9%;
+}
