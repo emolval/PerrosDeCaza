@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form id="contactForm" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="POST" enctype="multipart/form-data">
         <h1 style="text-align: center;">Contáctanos</h1>
 
         <label for="nombre">Nombre Completo:</label>
@@ -40,20 +40,23 @@
         </div>
 
         <label for="mensaje">Escribe tu mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Tu consulta aquí..."></textarea>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu consulta aquí..."></textarea>
 
         <label for="archivo">Adjuntar archivo (opcional):</label>
         <input type="file" id="archivo" name="archivo" accept=".jpg, .png, .pdf">
 
-        <div>
-            <input type="checkbox" id="terminos" name="terminos" required>
+        <div id="terminosCaja">
             <label for="terminos" style="display: inline;">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos">
         </div>
 
         <div id="boton">
             <button type="submit">Enviar</button>
         </div>
-    </form>
 
+        <div id="errorMessages"></div>
+        
+    </form>
+    <script src="../js/Contactanos.js"></script>
 </body>
 </html>
