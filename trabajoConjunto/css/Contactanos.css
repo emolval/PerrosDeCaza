@@ -48,10 +48,8 @@ select {
     margin-left: 20%;
 }
 
-
-input[type="radio"], input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
+#terminosCaja  {
+    display: flex;
 }
 
 button {
@@ -71,5 +69,16 @@ button:hover {
 
 #boton {
     margin-top: 20px;
+    text-align: center;
+}
+
+input:invalid, textarea:invalid {
+    border: 2px solid red;
+}
+
+#errorMessages {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
     text-align: center;
 }
