@@ -1,4 +1,4 @@
-header{
+header,footer{
     text-align: center;
     background-color: gray;
     padding: 1.5%;
@@ -6,4 +6,71 @@ header{
 a{
     color: aliceblue;
     margin-left: 1%;
+}
+
+footer {
+    background-color: gray;  
+}
+
+footer p {
+    color: black;
+    padding: 2%;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+footer .imagenes{
+  text-align: center;
+  display: block;
+  
+}
+
+footer .imagenes img {
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg);
+    transition: filter 0.3s ease;
+}
+
+#svg-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
+    transition: filter 0.3s ease;
+}
+
+aside {
+    max-width: 20%;
+    min-width: 15%;
+    min-width: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 2px solid #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+aside a {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #007bff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #b3c2c1;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
