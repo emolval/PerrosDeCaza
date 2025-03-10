@@ -25,7 +25,7 @@ let imagenes = [
     },
     {
         "url": "./trabajoConjunto/img/perros/jagd terrier.webp",
-        "nombre": "jagd terrier",
+        "nombre": "Jagd Terrier",
         "descripcion": "Un perro de caza versátil y valiente, especializado en la caza de madriguera. Su temperamento enérgico y su instinto cazador lo hacen un perro incansable en el trabajo."
 
     },
