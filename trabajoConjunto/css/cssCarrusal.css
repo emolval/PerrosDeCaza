@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-
-
-
-
 .carrusel {
     margin-top: 6%;
     display: flex;
@@ -26,7 +22,7 @@
     border-radius: 15px;
     margin: 5px;
     object-fit: cover;
-    filter: saturate(150%); /* Ajustar el valor si es necesario */
+    filter: saturate(150%); 
 }
 
 .texto {
@@ -35,7 +31,7 @@
     flex-direction: column;
     transform: translateY(0px);
     margin-bottom: 9px;
-    backdrop-filter: blur(20px); /* Solo funciona en algunos navegadores */
+    backdrop-filter: blur(20px); 
     background-color: rgba(63, 106, 138, 0.21);
     display: flex;
     align-items: center;
@@ -88,7 +84,7 @@
 .puntos p {
     font-size: 100px;
     font-weight: 500;
-    margin-top: -50px; /* Ajusta este valor si es necesario */
+    margin-top: -50px; 
     color: black;
 }
 
